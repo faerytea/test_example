@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/int_sort"
+        android:layout_width="@dimen/button_w"
+        android:layout_height="wrap_content"
+        android:text="@string/integer_sort"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/char_sort"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="onSortClick" />
+
+    <Button
+        android:id="@+id/char_sort"
+        android:layout_width="@dimen/button_w"
+        android:layout_height="wrap_content"
+        android:text="@string/character_sort"
+        app:layout_constraintTop_toBottomOf="@id/int_sort"
+        app:layout_constraintBottom_toTopOf="@id/word_sort"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="onSortClick" />
+
+    <Button
+        android:id="@+id/word_sort"
+        android:layout_width="@dimen/button_w"
+        android:layout_height="wrap_content"
+        android:text="@string/word_sort"
+        app:layout_constraintTop_toBottomOf="@id/char_sort"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="onSortClick" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

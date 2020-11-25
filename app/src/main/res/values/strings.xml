@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tests</string>
+    <string name="integer_sort">integer sort</string>
+    <string name="content_to_sort">content to sort</string>
+    <string name="sort">sort</string>
+    <string name="error">%s is not an Int</string>
+    <string name="character_sort">character sort</string>
+    <string name="word_sort">word sort</string>
+</resources>
